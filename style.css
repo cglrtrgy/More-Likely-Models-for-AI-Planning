@@ -14,18 +14,24 @@ body {
 }
 
 /* Header */
-header {
-    background-color: #333;
-    color: white;
+.header {
     text-align: center;
-    padding: 1em 0;
     margin-bottom: 40px;
 }
 
-/* Main content area */
-.container {
-    width: 80%;
+.title-section h1 {
+    margin-bottom: 0.5em;
+}
+
+.title-section p {
+    margin-bottom: 1em;
+}
+
+/* Wrapper for Content */
+.wrapper {
+    max-width: 800px;
     margin: 0 auto;
+    padding-bottom: 40px;
 }
 
 /* Section Styling */
@@ -50,18 +56,40 @@ p {
 footer {
     text-align: center;
     padding: 20px;
-    margin-top: 40px;
     background-color: #333;
     color: white;
 }
 
-/* Responsive Design */
-@media (max-width: 768px) {
-    .container {
-        width: 95%;
-    }
+/* Download Section */
+.download-section {
+    text-align: center;
+    padding: 20px;
+}
 
-    header, footer {
-        padding: 0.5em 0;
-    }
+/* Download Button */
+.download-button {
+    display: inline-block;
+    padding: 12px 25px;
+    background-color: #28a745; /* Green color for visibility */
+    color: white;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background-color 0.3s, transform 0.2s;
+    border: none;
+    cursor: pointer; /* Makes it clear the button is clickable */
+    font-size: 1.1em; /* Slightly larger font for emphasis */
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2); /* Subtle shadow for depth */
+}
+
+.download-button:hover, .download-button:focus {
+    background-color: #218838; /* Darker shade of green on hover/focus */
+    transform: scale(1.05); /* Slightly scale up the button */
+    box-shadow: 0 3px 8px rgba(0,0,0,0.3); /* Enhanced shadow on hover */
+}
+
+.download-button:active {
+    background-color: #1e7e34; /* Even darker green when clicked */
+    transform: scale(0.98); /* Slightly scale down on click */
+    box-shadow: 0 2px 4px rgba(0,0,0,0.25); /* Reduce shadow when clicked */
 }
