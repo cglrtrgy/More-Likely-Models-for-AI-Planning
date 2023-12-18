@@ -1,1 +1,1 @@
-# More-Likely-Models-for-AI-Planning
+# More Likely Models for AI Planning
